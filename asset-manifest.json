@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b941ffe0.css",
-    "main.js": "/static/js/main.0cabe01d.js",
-    "index.html": "/index.html",
-    "main.b941ffe0.css.map": "/static/css/main.b941ffe0.css.map",
-    "main.0cabe01d.js.map": "/static/js/main.0cabe01d.js.map"
+    "main.css": "/IlyaOsw/Cakestore.git/static/css/main.b941ffe0.css",
+    "main.js": "/IlyaOsw/Cakestore.git/static/js/main.f77edaad.js",
+    "index.html": "/IlyaOsw/Cakestore.git/index.html",
+    "main.b941ffe0.css.map": "/IlyaOsw/Cakestore.git/static/css/main.b941ffe0.css.map",
+    "main.f77edaad.js.map": "/IlyaOsw/Cakestore.git/static/js/main.f77edaad.js.map"
   },
   "entrypoints": [
     "static/css/main.b941ffe0.css",
-    "static/js/main.0cabe01d.js"
+    "static/js/main.f77edaad.js"
   ]
 }
