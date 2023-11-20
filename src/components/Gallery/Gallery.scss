@@ -27,10 +27,17 @@
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  .gallery-block img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5%;
+  }
+}
 @media (max-width: 575px) {
   .gallery-block img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin-top: 5%;
   }
 }
