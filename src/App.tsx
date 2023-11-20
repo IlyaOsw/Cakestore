@@ -14,7 +14,7 @@ const App: React.FC = () => {
     <div className="common">
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/Cakestore" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/price" element={<Price />} />

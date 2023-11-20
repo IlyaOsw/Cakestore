@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             action="https://formspree.io/f/xrgwkbqk"
           >
             <div className="contact-about fs-4">
-              <p className="mt-3 fw-bolder item-name">
+              <p className="fw-bolder item-name">
                 {t("name")}
                 <br></br>
                 <label htmlFor="name"></label>
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
                   placeholder={t("your_name")}
                 ></input>
               </p>
-              <p className="mt-3 fw-bolder item-mail">
+              <p className="fw-bolder item-mail">
                 {t("email")}
                 <br></br>
                 <label htmlFor="email"></label>

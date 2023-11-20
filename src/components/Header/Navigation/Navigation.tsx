@@ -27,12 +27,12 @@ const Navigation: React.FC = () => {
 
   return (
     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-      {getHeaders()}
       <li className="nav-item ms-3">
-        <NavLink className="nav-link" to="/">
+        <NavLink className="nav-link" to="/Cakestore">
           {t("main")}
         </NavLink>
       </li>
+      {getHeaders()}
     </ul>
   );
 };

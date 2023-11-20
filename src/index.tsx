@@ -9,7 +9,7 @@ import Particle from "./common/Particle";
 import translationEN from "./locales/en/translation.json";
 import translationEE from "./locales/ee/translation.json";
 import translationRU from "./locales/ru/translation.json";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -29,9 +29,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
       <Particle />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
