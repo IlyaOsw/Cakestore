@@ -22,7 +22,11 @@ const Footer: React.FC = () => {
           </a>
         </div>
         <div className="info z-3 ms-1">
-          <img src={process.env.PUBLIC_URL + `/images/Phone.png`} alt="Phone" />
+          <img
+            src={process.env.PUBLIC_URL + `/images/Phone.png`}
+            alt="Phone"
+            className="mb-1"
+          />
           <a href="tel:+37256268892" className="line phone_link">
             +372-5626-8892
           </a>

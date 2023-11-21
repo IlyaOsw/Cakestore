@@ -26,10 +26,10 @@ function Particle() {
               enable: true,
               mode: "attract",
             },
-            // onHover: {
-            //   enable: true,
-            //   mode: "grab",
-            // },
+            onHover: {
+              enable: true,
+              mode: "grab",
+            },
             resize: true,
           },
           modes: {
@@ -59,7 +59,7 @@ function Particle() {
           number: {
             density: {
               enable: true,
-              area: 1000,
+              area: 700,
             },
             value: 80,
           },
@@ -70,7 +70,7 @@ function Particle() {
             type: "circle",
           },
           size: {
-            value: { min: 2, max: 4 },
+            value: { min: 1, max: 2 },
           },
         },
         detectRetina: true,

@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
-          <div className="offcanvas-header bg-light">
+          <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
               {t("menu")}
             </h5>

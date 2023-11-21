@@ -31,7 +31,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <App />
-      {/* <Particle /> */}
+      <Particle />
     </HashRouter>
   </React.StrictMode>
 );

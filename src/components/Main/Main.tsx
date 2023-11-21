@@ -8,7 +8,7 @@ const Main: React.FC = () => {
       <div className="block-image">
         <img
           src={process.env.PUBLIC_URL + `/images/cover.jpg`}
-          className="main_image"
+          className="main_image z-1"
           alt="Cover"
         />
       </div>

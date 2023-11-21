@@ -17,7 +17,7 @@ const Card: React.FC = () => {
   ];
   const getCards = (): JSX.Element[] =>
     cards.map((el) => (
-      <NavLink to={"/gallery"} className="card mt-3" key={el.id}>
+      <NavLink to={"/gallery"} className="card mt-5 z-1" key={el.id}>
         <div className="card-body">
           <p className="card-title fs-3">{t(el.label)}</p>
           <p className="card-text fs-5">

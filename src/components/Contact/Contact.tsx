@@ -96,7 +96,7 @@ const Contact: React.FC = () => {
             </div>
           </form>
         </div>
-        <div className="image mt-2">
+        <div className="image mt-2 z-1">
           <img
             src={process.env.PUBLIC_URL + `/images/ContactImage.jpg`}
             alt="Cake image"
