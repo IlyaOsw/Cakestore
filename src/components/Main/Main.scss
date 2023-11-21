@@ -17,31 +17,27 @@
     justify-content: center;
   }
   .card {
-    z-index: 1;
-    width: 100%;
-    min-height: 200px;
-    height: 300px;
-    box-shadow: 0px 0px 15px 3px rgb(254, 198, 208);
-    border-radius: 25px;
+    width: 22rem;
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px 3px rgb(255, 222, 228);
     transition: 0.3s all;
-    text-align: center;
     cursor: pointer;
-    background-color: rgb(255, 238, 251);
-    opacity: 0.85;
+    background-color: rgb(255, 245, 253) !important;
+    text-decoration: none;
     &:hover {
       filter: brightness(102%);
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
     .card-title {
       text-align: center;
       text-transform: uppercase;
+      letter-spacing: 3px;
     }
-  }
-  .card-image img {
-    border-radius: 25px;
-    width: 70%;
-    height: 13rem;
-    object-fit: cover;
-    box-shadow: 0px 0px 15px 3px rgb(254, 198, 208);
+    .card-text {
+      text-align: center;
+    }
   }
 }

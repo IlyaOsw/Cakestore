@@ -1,8 +1,7 @@
 .block-contact {
   cursor: default;
   text-align: center;
-  overflow: hidden;
-  height: 1100px;
+  min-height: 1000px;
   letter-spacing: 1px;
   display: flex;
   flex-wrap: wrap;
@@ -15,8 +14,10 @@
     width: 61%;
   }
   .contact-about {
-    height: 140px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
     flex-wrap: wrap;
     justify-content: space-around;
     input {
@@ -26,11 +27,22 @@
       cursor: pointer;
     }
   }
+  .name-email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .phone-container {
+    width: 100%;
+    text-align: center;
+  }
   .contact-textarea {
     width: 100%;
     textarea {
       text-align: center;
-      min-width: 70%;
+      min-width: 80%;
       height: 125px;
       background-color: transparent;
       resize: none;
@@ -75,6 +87,10 @@
     }
     .image {
       width: 400px;
+    }
+    .name-email-container {
+      flex-direction: column;
+      align-items: center;
     }
   }
   @media (max-width: 575px) {

@@ -18,6 +18,8 @@
     "your_name": "Enter your name",
 	"email": "E-mail",
 	"your_mail": "Enter your e-mail",
+    "phone": "Phone",
+    "your_phone": "Your phone number",
 	"message": "Message",
 	"your_message": "Enter your message",
 	"submit": "Submit"

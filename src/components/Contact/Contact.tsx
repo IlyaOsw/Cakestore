@@ -1,14 +1,14 @@
 import React from "react";
 import "./Contact.scss";
 import { useTranslation } from "react-i18next";
-// import { useForm, ValidationError } from "@formspree/react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
-  // const [state] = useForm("xrgwkbqk");
-  // if (state.succeeded) {
-  //   return <p>Thanks for joining!</p>;
-  // }
+  const [state] = useForm("xrgwkbqk");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <>
       <div className="block-contact container">
@@ -18,37 +18,57 @@ const Contact: React.FC = () => {
             id="form"
             action="https://formspree.io/f/xrgwkbqk"
           >
-            <div className="contact-about fs-4">
-              <p className="fw-bolder item-name">
-                {t("name")}
-                <br></br>
-                <label htmlFor="name"></label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="line"
-                  placeholder={t("your_name")}
-                ></input>
-              </p>
-              <p className="fw-bolder item-mail">
-                {t("email")}
-                <br></br>
-                <label htmlFor="email"></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="line"
-                  placeholder={t("your_mail")}
-                ></input>
-                {/* <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                /> */}
-              </p>
+            <div className="contact-about fs-4 mt-5">
+              <div className="name-email-container">
+                <p className="fw-bolder item-name">
+                  {t("name")}
+                  <br />
+                  <label htmlFor="name">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="line"
+                      placeholder={t("your_name")}
+                    />
+                  </label>
+                </p>
+                <p className="fw-bolder item-mail">
+                  {t("email")}
+                  <br />
+                  <label htmlFor="email">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="line"
+                      placeholder={t("your_mail")}
+                    />
+                  </label>
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
+                </p>
+              </div>
+              <div className="phone-container">
+                <p className="fw-bolder item-phone">
+                  {t("phone")}
+                  <br />
+                  <label htmlFor="phone">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      className="line"
+                      placeholder={t("your_phone")}
+                    />
+                  </label>
+                </p>
+              </div>
             </div>
+
             <div className="contact-textarea fs-4 mt-5 fw-bolder">
               <p className="item">{t("message")}</p>
               <label htmlFor="formText"></label>
@@ -58,16 +78,16 @@ const Contact: React.FC = () => {
                 className="line item"
                 placeholder={t("your_message")}
               ></textarea>
-              {/* <ValidationError
+              <ValidationError
                 prefix="Message"
                 field="message"
                 errors={state.errors}
-              /> */}
+              />
             </div>
             <div className="contact-send mt-5">
               <button
                 type="submit"
-                // disabled={state.submitting}
+                disabled={state.submitting}
                 value="Send Email"
                 className="fw-bold"
               >
@@ -76,7 +96,7 @@ const Contact: React.FC = () => {
             </div>
           </form>
         </div>
-        <div className="image z-1">
+        <div className="image mt-2">
           <img
             src={process.env.PUBLIC_URL + `/images/ContactImage.jpg`}
             alt="Cake image"

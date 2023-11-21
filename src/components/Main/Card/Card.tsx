@@ -17,17 +17,20 @@ const Card: React.FC = () => {
   ];
   const getCards = (): JSX.Element[] =>
     cards.map((el) => (
-      <div className="card me-5 mt-4" key={el.id}>
-        <h2 className="card-title pt-3">{t(el.label)} </h2>
-        <div className="card-image">
-          <NavLink to="/gallery">
-            <img
-              src={process.env.PUBLIC_URL + `/images/${el.label}.jpg`}
-              alt={el.label}
-            />
-          </NavLink>
+      <NavLink to={"/gallery"} className="card mt-3" key={el.id}>
+        <div className="card-body">
+          <p className="card-title fs-3">{t(el.label)}</p>
+          <p className="card-text fs-5">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-      </div>
+        <img
+          src={process.env.PUBLIC_URL + `/images/${el.label}.jpg`}
+          className="card-img-top"
+          alt={el.label}
+        />
+      </NavLink>
     ));
 
   return <div className="items-card d-sm-flex mb-5">{getCards()}</div>;

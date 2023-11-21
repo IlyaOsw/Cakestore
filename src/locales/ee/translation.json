@@ -18,6 +18,8 @@
     "your_name": "Teie nimi",
 	"email": "E-post",
 	"your_mail": "Teie e-post",
+    "phone": "Telefon",
+    "your_phone": "Teie telefoni number",
 	"message": "Sõnum",
 	"your_message": "Sisestage oma sõnum",
 	"submit": "Saada"
