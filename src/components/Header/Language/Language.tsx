@@ -19,7 +19,7 @@ const Language: React.FC = () => {
   ];
   const getLanguages = (): JSX.Element[] =>
     languageItems.map((lang) => (
-      <li key={lang.id}>
+      <li key={lang.id} data-bs-dismiss="offcanvas">
         <button
           className="dropdown-item"
           type="button"

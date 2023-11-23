@@ -30,12 +30,46 @@ const Bento: React.FC = () => {
         src={process.env.PUBLIC_URL + `/images/gallerybento/${item.label}.jpg`}
         alt={item.label}
         key={item.id}
+        data-bs-toggle="modal"
+        data-bs-target={`#bentoModal${item.id}`}
       />
+    ));
+  const getBentoModal = () =>
+    bento.map((item) => (
+      <div
+        className="modal fade"
+        id={`bentoModal${item.id}`}
+        tabIndex={-1}
+        aria-hidden="true"
+        key={`bentoModal${item.id}`}
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-body">
+              <button
+                type="button"
+                className="btn-close position-absolute top-0 end-0 m-2 shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <img
+                className="d-block w-100 h-100"
+                src={
+                  process.env.PUBLIC_URL +
+                  `/images/gallerybento/${item.label}.jpg`
+                }
+                alt={item.label}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     ));
   return (
     <div className="gallery-block">
       <h2 className="gallery-title fs-1">{t("bento")}</h2>
       <div className="gallery-images">{getBento()}</div>
+      {getBentoModal()}
     </div>
   );
 };

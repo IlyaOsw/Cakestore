@@ -1,6 +1,8 @@
 import React from "react";
 import "../Gallery.scss";
 import { useTranslation } from "react-i18next";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/js/src/modal";
 
 const Cakes: React.FC = () => {
   const { t } = useTranslation();
@@ -34,16 +36,52 @@ const Cakes: React.FC = () => {
   ];
   const getCakes = () =>
     cakes.map((item) => (
-      <img
-        src={process.env.PUBLIC_URL + `/images/gallerycake/${item.label}.jpg`}
-        alt={item.label}
-        key={item.id}
-      />
+      <div>
+        <img
+          src={process.env.PUBLIC_URL + `/images/gallerycake/${item.label}.jpg`}
+          alt={item.label}
+          key={item.id}
+          data-bs-toggle="modal"
+          data-bs-target={`#cakeModal${item.id}`}
+        />
+      </div>
+    ));
+  const getCakesModal = () =>
+    cakes.map((item) => (
+      <div
+        className="modal fade"
+        id={`cakeModal${item.id}`}
+        tabIndex={-1}
+        aria-hidden="true"
+        key={`cakeModal${item.id}`}
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-body">
+              <button
+                type="button"
+                className="btn-close position-absolute top-0 end-0 m-2 shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <img
+                className="d-block w-100 h-100"
+                src={
+                  process.env.PUBLIC_URL +
+                  `/images/gallerycake/${item.label}.jpg`
+                }
+                alt={item.label}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     ));
   return (
     <div className="gallery-block">
       <h2 className="gallery-title fs-1">{t("cake")}</h2>
       <div className="gallery-images">{getCakes()}</div>
+      {getCakesModal()}
     </div>
   );
 };

@@ -11,10 +11,10 @@ const Delivery: React.FC = () => {
           <p className="fs-2 subtitle">{t("order")}</p>
           <p>{t("myself")}</p>
           <p>{t("deliveryPrice")}</p>
-          <br />
         </div>
         <div className="fs-4 red">
           <p>{t("PS")}</p>
+          <br />
           <p>
             {t("prepayment1")}
             <br />

@@ -24,12 +24,46 @@ const Cupcakes: React.FC = () => {
         }
         alt={item.label}
         key={item.id}
+        data-bs-toggle="modal"
+        data-bs-target={`#cupcakeModal${item.id}`}
       />
+    ));
+  const getCupcakesModal = () =>
+    cupcakes.map((item) => (
+      <div
+        className="modal fade"
+        id={`cupcakeModal${item.id}`}
+        tabIndex={-1}
+        aria-hidden="true"
+        key={`cupcakeModal${item.id}`}
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-body">
+              <button
+                type="button"
+                className="btn-close position-absolute top-0 end-0 m-2 shadow-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <img
+                className="d-block w-100 h-100"
+                src={
+                  process.env.PUBLIC_URL +
+                  `/images/gallerycupcake/${item.label}.jpg`
+                }
+                alt={item.label}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     ));
   return (
     <div className="gallery-block">
       <h2 className="gallery-title fs-1">{t("cupcake")}</h2>
       <div className="gallery-images">{getCupcakes()}</div>
+      {getCupcakesModal()}
     </div>
   );
 };

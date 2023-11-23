@@ -18,7 +18,7 @@ const Navigation: React.FC = () => {
   ];
   const getHeaders = (): JSX.Element[] =>
     headerItems.map((item) => (
-      <li className="nav-item ms-3" key={item.id}>
+      <li className="nav-item ms-3" key={item.id} data-bs-dismiss="offcanvas">
         <NavLink className="nav-link" to={`/${item.label}`}>
           {t(item.label)}
         </NavLink>
@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
 
   return (
     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-      <li className="nav-item ms-3">
+      <li className="nav-item ms-3" data-bs-dismiss="offcanvas">
         <NavLink className="nav-link" to="/Cakestore">
           {t("main")}
         </NavLink>

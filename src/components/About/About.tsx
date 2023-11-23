@@ -6,7 +6,6 @@ const About: React.FC = () => {
     <div className="container about">
       <div className="about-image">
         <img
-          className=""
           src={process.env.PUBLIC_URL + `/images/Profile.jpg`}
           alt="Profile"
         />
