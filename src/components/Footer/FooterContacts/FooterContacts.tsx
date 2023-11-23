@@ -4,13 +4,11 @@ import { useTranslation } from "react-i18next";
 
 const FooterContacts: React.FC = () => {
   const { t } = useTranslation();
-
   enum Contacts {
     LOCATION = "location",
     PHONE = "phone",
     MAIL = "mail",
   }
-
   const contacts: {
     id: number;
     label: Contacts;
@@ -36,7 +34,6 @@ const FooterContacts: React.FC = () => {
       link: "mailto: annalevina1803@gmail.com",
     },
   ];
-
   const getContacts = () =>
     contacts.map((el) => (
       <div className="info z-3 ms-1" key={el.id}>
