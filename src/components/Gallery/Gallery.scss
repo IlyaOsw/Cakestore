@@ -2,7 +2,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: overline 1px;
-  margin: 75px auto auto auto;
+  margin: 70px auto auto auto;
   z-index: 1;
   letter-spacing: 5px;
 }
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
 }
 .modal_center {
-  margin-top: 5%;
+  margin-top: 7%;
 }
 @media (max-width: 767px) {
   .gallery-block img {
@@ -38,5 +38,8 @@
     width: 150px;
     height: 150px;
     margin-top: 5%;
+  }
+  .modal_center {
+    margin-top: 17%;
   }
 }

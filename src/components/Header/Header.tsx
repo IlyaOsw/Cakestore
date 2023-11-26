@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./Header.scss";
 import Language from "./Language/Language";
 import Navigation from "./Navigation/Navigation";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -14,7 +15,9 @@ const Header: React.FC = () => {
           src={process.env.PUBLIC_URL + `/images/AnnyCakestoreLogo.jpg`}
           alt="Logo"
         />
-        <p className="navbar-brand fs-3 mt-2">Anny Cakestore</p>
+        <NavLink to="/Cakestore" className="navbar-brand fs-3">
+          Anny Cakestore
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"

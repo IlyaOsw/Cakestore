@@ -29,6 +29,11 @@ const About: React.FC = () => {
           consequatur molestias consectetur numquam? Ex quos perferendis nisi
           vel quaerat, quam reprehenderit facere repellat obcaecati consequatur
           sapiente aliquid laboriosam, in enim quis!
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ab
+          nulla animi voluptatem dolorum in id consectetur nostrum officia
+          dignissimos.
         </p>
       </div>
     </div>

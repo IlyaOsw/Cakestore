@@ -33,7 +33,7 @@ const Cupcakes: React.FC = () => {
   const getCupcakesModal = () =>
     cupcakes.map((item) => (
       <div
-        className="modal fade"
+        className="modal fade modal_center"
         id={`cupcakeModal${item.id}`}
         tabIndex={-1}
         aria-hidden="true"

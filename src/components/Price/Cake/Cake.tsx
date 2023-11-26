@@ -5,9 +5,9 @@ import { useTranslation } from "react-i18next";
 const Cake: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div className="test">
+    <div>
       <div className="cake-title">
-        <h1 className="fs-1">{t("cake")}</h1>
+        <h1 className="fs-1 mt-5">{t("cake")}</h1>
       </div>
       <div className="cakes mt-5">
         <div className="cakes_description">

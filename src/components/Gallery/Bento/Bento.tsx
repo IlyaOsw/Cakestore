@@ -41,7 +41,7 @@ const Bento: React.FC = () => {
   const getBentoModal = () =>
     bento.map((item) => (
       <div
-        className="modal fade"
+        className="modal fade modal_center"
         id={`bentoModal${item.id}`}
         tabIndex={-1}
         aria-hidden="true"
