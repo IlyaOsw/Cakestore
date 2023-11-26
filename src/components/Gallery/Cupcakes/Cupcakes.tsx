@@ -17,17 +17,19 @@ const Cupcakes: React.FC = () => {
     { id: 4, label: Cupcake.CUPCAKE4 },
   ];
   const getCupcakes = () =>
-    cupcakes.map((item) => (
-      <img
-        src={
-          process.env.PUBLIC_URL + `/images/gallerycupcake/${item.label}.jpg`
-        }
-        alt={item.label}
-        key={item.id}
-        data-bs-toggle="modal"
-        data-bs-target={`#cupcakeModal${item.id}`}
-      />
-    ));
+    cupcakes
+      .reverse()
+      .map((item) => (
+        <img
+          src={
+            process.env.PUBLIC_URL + `/images/gallerycupcake/${item.label}.jpg`
+          }
+          alt={item.label}
+          key={item.id}
+          data-bs-toggle="modal"
+          data-bs-target={`#cupcakeModal${item.id}`}
+        />
+      ));
   const getCupcakesModal = () =>
     cupcakes.map((item) => (
       <div

@@ -40,7 +40,7 @@ const FooterContacts: React.FC = () => {
         <img
           src={process.env.PUBLIC_URL + `/images/${el.label}.png`}
           alt={el.label}
-          className="mb-1 me-1"
+          className="me-2"
         />
         <a href={el.link} className="line">
           {t(el.name)}

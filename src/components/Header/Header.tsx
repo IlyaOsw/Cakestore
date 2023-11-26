@@ -14,11 +14,7 @@ const Header: React.FC = () => {
           src={process.env.PUBLIC_URL + `/images/AnnyCakestoreLogo.jpg`}
           alt="Logo"
         />
-        <p className="navbar-brand fs-3 mt-2">
-          Anny
-          <br />
-          Cakestore
-        </p>
+        <p className="navbar-brand fs-3 mt-2">Anny Cakestore</p>
         <button
           className="navbar-toggler"
           type="button"

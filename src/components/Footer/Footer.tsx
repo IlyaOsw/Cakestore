@@ -6,7 +6,7 @@ import FooterContacts from "./FooterContacts/FooterContacts";
 const Footer: React.FC = () => {
   return (
     <div className="block-footer fs-4">
-      <div className="container d-sm-flex justify-content-around footer-contact mb-2">
+      <div className="container d-sm-flex justify-content-around footer-contact mb-3">
         <FooterContacts />
         <Follow />
       </div>

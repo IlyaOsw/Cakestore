@@ -25,15 +25,19 @@ const Bento: React.FC = () => {
     { id: 8, label: Bento.BENTO8 },
   ];
   const getBento = () =>
-    bento.map((item) => (
-      <img
-        src={process.env.PUBLIC_URL + `/images/gallerybento/${item.label}.jpg`}
-        alt={item.label}
-        key={item.id}
-        data-bs-toggle="modal"
-        data-bs-target={`#bentoModal${item.id}`}
-      />
-    ));
+    bento
+      .reverse()
+      .map((item) => (
+        <img
+          src={
+            process.env.PUBLIC_URL + `/images/gallerybento/${item.label}.jpg`
+          }
+          alt={item.label}
+          key={item.id}
+          data-bs-toggle="modal"
+          data-bs-target={`#bentoModal${item.id}`}
+        />
+      ));
   const getBentoModal = () =>
     bento.map((item) => (
       <div

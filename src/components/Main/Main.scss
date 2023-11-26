@@ -10,26 +10,10 @@
     filter: saturate(150%);
     mask-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 1)
     );
   }
-  // .main_image {
-  //   margin-top: 100px;
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100vh;
-  //   top: 0;
-  //   left: 0;
-  //   object-fit: cover;
-  //   object-position: top center;
-  //   background: linear-gradient(
-  //     to bottom,
-  //     rgba(255, 255, 255, 0.9),
-  //     rgba(255, 255, 255, 0.1)
-  //   );
-  // }
-
   .block-image {
     height: 55vh;
     display: flex;
@@ -37,6 +21,7 @@
     justify-content: center;
   }
   .card {
+    margin-top: 12% !important;
     width: 22rem;
     display: flex;
     align-self: center;

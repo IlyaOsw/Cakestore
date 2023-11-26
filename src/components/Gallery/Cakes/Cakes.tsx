@@ -35,8 +35,9 @@ const Cakes: React.FC = () => {
     { id: 12, label: Cakes.CAKE12 },
   ];
   const getCakes = () =>
-    cakes.map((item) => (
-      <div>
+    cakes
+      .reverse()
+      .map((item) => (
         <img
           src={process.env.PUBLIC_URL + `/images/gallerycake/${item.label}.jpg`}
           alt={item.label}
@@ -44,12 +45,11 @@ const Cakes: React.FC = () => {
           data-bs-toggle="modal"
           data-bs-target={`#cakeModal${item.id}`}
         />
-      </div>
-    ));
+      ));
   const getCakesModal = () =>
     cakes.map((item) => (
       <div
-        className="modal fade"
+        className="modal fade modal_center"
         id={`cakeModal${item.id}`}
         tabIndex={-1}
         aria-hidden="true"
