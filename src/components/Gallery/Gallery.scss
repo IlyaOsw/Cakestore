@@ -23,9 +23,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.modal_center {
-  margin-top: 7%;
-}
 @media (max-width: 767px) {
   .gallery-block img {
     width: 200px;
@@ -38,8 +35,5 @@
     width: 150px;
     height: 150px;
     margin-top: 5%;
-  }
-  .modal_center {
-    margin-top: 17%;
   }
 }

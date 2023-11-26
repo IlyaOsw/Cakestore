@@ -49,13 +49,13 @@ const Cakes: React.FC = () => {
   const getCakesModal = () =>
     cakes.map((item) => (
       <div
-        className="modal fade modal_center"
+        className="modal fade"
         id={`cakeModal${item.id}`}
         tabIndex={-1}
         aria-hidden="true"
         key={`cakeModal${item.id}`}
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
               <button

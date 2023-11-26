@@ -41,13 +41,13 @@ const Bento: React.FC = () => {
   const getBentoModal = () =>
     bento.map((item) => (
       <div
-        className="modal fade modal_center"
+        className="modal fade"
         id={`bentoModal${item.id}`}
         tabIndex={-1}
         aria-hidden="true"
         key={`bentoModal${item.id}`}
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
               <button
