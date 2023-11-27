@@ -10,7 +10,6 @@ import translationEN from "./locales/en/translation.json";
 import translationEE from "./locales/ee/translation.json";
 import translationRU from "./locales/ru/translation.json";
 import { HashRouter } from "react-router-dom";
-import Animation from "./common/Animation";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -33,7 +32,6 @@ root.render(
     <HashRouter>
       <App />
       <Particle />
-      {/* <Animation /> */}
     </HashRouter>
   </React.StrictMode>
 );

@@ -10,12 +10,12 @@ const Header: React.FC = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container z-3">
-        <img
-          className="logo_img me-3"
-          src={process.env.PUBLIC_URL + `/images/AnnyCakestoreLogo.jpg`}
-          alt="Logo"
-        />
         <NavLink to="/Cakestore" className="navbar-brand fs-3">
+          <img
+            className="logo_img me-3"
+            src={process.env.PUBLIC_URL + `/images/AnnyCakestoreLogo.jpg`}
+            alt="Logo"
+          />
           Anny Cakestore
         </NavLink>
         <button

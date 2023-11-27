@@ -2,50 +2,43 @@ import React from "react";
 import "../Gallery.scss";
 import { useTranslation } from "react-i18next";
 
-const Bento: React.FC = () => {
+const Cupcakes: React.FC = () => {
   const { t } = useTranslation();
-  enum Bento {
-    BENTO1 = "bento1",
-    BENTO2 = "bento2",
-    BENTO3 = "bento3",
-    BENTO4 = "bento4",
-    BENTO5 = "bento5",
-    BENTO6 = "bento6",
-    BENTO7 = "bento7",
-    BENTO8 = "bento8",
+  enum Cupcake {
+    CUPCAKE = "cupcake1",
+    CUPCAKE2 = "cupcake2",
+    CUPCAKE3 = "cupcake3",
+    CUPCAKE4 = "cupcake4",
   }
-  const bento: { id: number; label: Bento }[] = [
-    { id: 1, label: Bento.BENTO1 },
-    { id: 2, label: Bento.BENTO2 },
-    { id: 3, label: Bento.BENTO3 },
-    { id: 4, label: Bento.BENTO4 },
-    { id: 5, label: Bento.BENTO5 },
-    { id: 6, label: Bento.BENTO6 },
-    { id: 7, label: Bento.BENTO7 },
-    { id: 8, label: Bento.BENTO8 },
+  const cupcakes: { id: number; label: Cupcake }[] = [
+    { id: 1, label: Cupcake.CUPCAKE },
+    { id: 2, label: Cupcake.CUPCAKE2 },
+    { id: 3, label: Cupcake.CUPCAKE3 },
+    { id: 4, label: Cupcake.CUPCAKE4 },
   ];
-  const getBento = () =>
-    bento
+  const getCupcakes = () =>
+    cupcakes
       .reverse()
       .map((item) => (
         <img
           src={
-            process.env.PUBLIC_URL + `/images/gallerybento/${item.label}.jpg`
+            process.env.PUBLIC_URL + `/images/gallerycupcake/${item.label}.jpg`
           }
           alt={item.label}
           key={item.id}
           data-bs-toggle="modal"
-          data-bs-target={`#bentoModal${item.id}`}
+          data-bs-target={`#cupcakeModal${item.id}`}
+          className="animation_item"
         />
       ));
-  const getBentoModal = () =>
-    bento.map((item) => (
+  const getCupcakesModal = () =>
+    cupcakes.map((item) => (
       <div
         className="modal fade"
-        id={`bentoModal${item.id}`}
+        id={`cupcakeModal${item.id}`}
         tabIndex={-1}
         aria-hidden="true"
-        key={`bentoModal${item.id}`}
+        key={`cupcakeModal${item.id}`}
       >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
@@ -60,7 +53,7 @@ const Bento: React.FC = () => {
                 className="d-block w-100 h-100"
                 src={
                   process.env.PUBLIC_URL +
-                  `/images/gallerybento/${item.label}.jpg`
+                  `/images/gallerycupcake/${item.label}.jpg`
                 }
                 alt={item.label}
               />
@@ -71,11 +64,11 @@ const Bento: React.FC = () => {
     ));
   return (
     <div className="gallery-block">
-      <h2 className="gallery-title fs-1">{t("bento")}</h2>
-      <div className="gallery-images">{getBento()}</div>
-      {getBentoModal()}
+      <h2 className="gallery-title fs-1 animation_item item">{t("cupcake")}</h2>
+      <div className="gallery-images">{getCupcakes()}</div>
+      {getCupcakesModal()}
     </div>
   );
 };
 
-export default Bento;
+export default Cupcakes;

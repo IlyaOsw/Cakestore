@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.scss";
 import { useTranslation } from "react-i18next";
 import { useForm, ValidationError } from "@formspree/react";
+import Animation from "../../common/Animation";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -12,6 +13,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <div className="block-contact container">
+        <Animation />
         <div className="contact-info z-2">
           <form
             method="POST"
@@ -19,7 +21,7 @@ const Contact: React.FC = () => {
             action="https://formspree.io/f/xrgwkbqk"
           >
             <div className="contact-about fs-4 mt-5">
-              <div className="name-email-container">
+              <div className="name-email-container animation_item item">
                 <p className="fw-bolder item-name">
                   {t("name")}
                   <br />
@@ -53,7 +55,7 @@ const Contact: React.FC = () => {
                 </p>
               </div>
               <div className="phone-container">
-                <p className="fw-bolder item-phone">
+                <p className="fw-bolder item-phone animation_item item">
                   {t("phone")}
                   <br />
                   <label htmlFor="phone">
@@ -68,14 +70,13 @@ const Contact: React.FC = () => {
                 </p>
               </div>
             </div>
-
             <div className="contact-textarea fs-4 mt-5 fw-bolder">
-              <p className="item">{t("message")}</p>
+              <p className="animation_item item">{t("message")}</p>
               <label htmlFor="formText"></label>
               <textarea
                 id="message"
                 name="message"
-                className="line item"
+                className="line animation_item item"
                 placeholder={t("your_message")}
               ></textarea>
               <ValidationError
@@ -89,7 +90,7 @@ const Contact: React.FC = () => {
                 type="submit"
                 disabled={state.submitting}
                 value="Send Email"
-                className="fw-bold"
+                className="fw-bold animation_item item"
               >
                 {t("submit")}
               </button>
@@ -100,6 +101,7 @@ const Contact: React.FC = () => {
           <img
             src={process.env.PUBLIC_URL + `/images/ContactImage.jpg`}
             alt="Cake image"
+            className="animation_item"
           />
         </div>
       </div>

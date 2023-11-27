@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.scss";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Main from "./components/Main/Main";
-import About from "./components/About/About";
-import Gallery from "./components/Gallery/Gallery";
-import Price from "./components/Price/Price";
-import Contact from "./components/Contact/Contact";
+import Header from "./pages/Header/Header";
+import Footer from "./pages/Footer/Footer";
+import Main from "./pages/Main/Main";
+import About from "./pages/About/About";
+import Gallery from "./pages/Gallery/Gallery";
+import Price from "./pages/Price/Price";
+import Contact from "./pages/Contact/Contact";
 import ScrollButton from "./common/ScrollButton";
 
 const App: React.FC = () => {

@@ -34,6 +34,7 @@ const Animation: React.FC = () => {
     if (items.length > 0) {
       window.addEventListener("scroll", animationOnScroll);
     }
+    animationOnScroll();
   }, []);
   return <></>;
 };

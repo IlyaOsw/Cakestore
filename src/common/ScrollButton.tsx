@@ -21,7 +21,7 @@ const ScrollButton: React.FC = () => {
         alt="Arrow up"
         className={`scroll-btn ${isHidden ? "hidden" : ""}`}
         onClick={scrollToTop}
-      ></img>
+      />
     </div>
   );
 };
