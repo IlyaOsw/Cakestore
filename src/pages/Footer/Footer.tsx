@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <FooterContacts />
         <Follow />
       </div>
-      <div className="footer-copyright pb-4 z-3">
+      <div className="footer-copyright pb-4 z-3 animation_item item">
         <a
           href="https://www.linkedin.com/in/ilyaosw/"
           target="_blank"

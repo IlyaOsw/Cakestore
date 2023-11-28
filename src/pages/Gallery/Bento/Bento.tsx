@@ -72,7 +72,9 @@ const Bento: React.FC = () => {
     ));
   return (
     <div className="gallery-block">
-      <h2 className="gallery-title fs-1 animation_item item">{t("bento")}</h2>
+      <h2 className="gallery-title fs-1 animation_item item hr">
+        {t("bento")}
+      </h2>
       <div className="gallery-images">{getBento()}</div>
       {getBentoModal()}
     </div>

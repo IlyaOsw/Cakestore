@@ -29,7 +29,7 @@ const About: React.FC = () => {
         </p>
       </div>
       <div className="about-info-2 fs-5">
-        <p className="animation_item item2">
+        <p className="animation_item item">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           ab reprehenderit architecto eveniet voluptates laboriosam porro, eius
           consequatur suscipit, debitis ea, nihil amet obcaecati harum tempora
@@ -41,7 +41,7 @@ const About: React.FC = () => {
         </p>
       </div>
       <img
-        src={process.env.PUBLIC_URL + `/images/marble.jpg`}
+        src={process.env.PUBLIC_URL + `/images/coverAbout.jpg`}
         alt="Cover"
         className="background_image"
       />

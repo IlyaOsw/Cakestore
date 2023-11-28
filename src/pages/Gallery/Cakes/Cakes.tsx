@@ -88,7 +88,7 @@ const Cakes: React.FC = () => {
     ));
   return (
     <div className="gallery-block">
-      <h2 className="gallery-title fs-1 animation_item item">{t("cake")}</h2>
+      <h2 className="gallery-title fs-1 animation_item item hr">{t("cake")}</h2>
       <div className="gallery-images">{getCakes()}</div>
       {getCakesModal()}
     </div>

@@ -32,7 +32,7 @@ const ScrollLinks: React.FC = () => {
       </ScrollLink>
     ));
   return (
-    <div className="fs-2 mt-5 d-flex justify-content-around pb-4 ms-3">
+    <div className="fs-2 d-flex justify-content-around pb-4 animation_item item">
       {getLinks()}
     </div>
   );

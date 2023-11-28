@@ -11,9 +11,14 @@ const Contact: React.FC = () => {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <>
+    <div className="container-fluid contact">
+      <Animation />
+      <img
+        src={process.env.PUBLIC_URL + `/images/coverContact.jpg`}
+        alt="Cover"
+        className="background"
+      />
       <div className="block-contact container">
-        <Animation />
         <div className="contact-info z-2">
           <form
             method="POST"
@@ -105,7 +110,7 @@ const Contact: React.FC = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Contact;
