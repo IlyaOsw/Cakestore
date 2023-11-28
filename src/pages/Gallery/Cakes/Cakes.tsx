@@ -19,6 +19,10 @@ const Cakes: React.FC = () => {
     CAKE10 = "cake10",
     CAKE11 = "cake11",
     CAKE12 = "cake12",
+    CAKE13 = "cake13",
+    CAKE14 = "cake14",
+    CAKE15 = "cake15",
+    CAKE16 = "cake16",
   }
   const cakes: { id: number; label: Cakes }[] = [
     { id: 1, label: Cakes.CAKE1 },
@@ -33,6 +37,10 @@ const Cakes: React.FC = () => {
     { id: 10, label: Cakes.CAKE10 },
     { id: 11, label: Cakes.CAKE11 },
     { id: 12, label: Cakes.CAKE12 },
+    { id: 13, label: Cakes.CAKE13 },
+    { id: 14, label: Cakes.CAKE14 },
+    { id: 15, label: Cakes.CAKE15 },
+    { id: 16, label: Cakes.CAKE16 },
   ];
   const getCakes = () =>
     cakes

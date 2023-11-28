@@ -6,13 +6,13 @@ const Bento: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="bento-title">
+      <div className="bento-title animation_item item">
         <h1 className="fs-1">{t("bento")}</h1>
       </div>
       <div className="bento mt-5">
         <div className="bento_description">
           <div>
-            <div>
+            <div className="animation_item item">
               <h2 className="fs-2 subtitle">{t("fill")}</h2>
               <ul className="fs-3">
                 <li>{t("berry")}</li>
@@ -28,7 +28,7 @@ const Bento: React.FC = () => {
         </div>
         <div className="bento_price">
           <div>
-            <div>
+            <div className="animation_item item">
               <h2 className="fs-2 subtitle">{t("price")}</h2>
               <ul className="fs-3">
                 <li>{t("bento10")}</li>

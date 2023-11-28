@@ -28,4 +28,13 @@
   .red {
     color: red;
   }
+  .item {
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+  }
+  .item.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }

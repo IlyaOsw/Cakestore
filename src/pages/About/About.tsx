@@ -29,7 +29,7 @@ const About: React.FC = () => {
         </p>
       </div>
       <div className="about-info-2 fs-5">
-        <p className="animation_item item">
+        <p className="animation_item item2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           ab reprehenderit architecto eveniet voluptates laboriosam porro, eius
           consequatur suscipit, debitis ea, nihil amet obcaecati harum tempora

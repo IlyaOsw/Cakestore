@@ -6,13 +6,13 @@ const Cake: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className="cake-title">
+      <div className="cake-title animation_item item">
         <h1 className="fs-1 mt-5">{t("cake")}</h1>
       </div>
       <div className="cakes mt-5">
         <div className="cakes_description">
           <div>
-            <div>
+            <div className="animation_item item">
               <h2 className="fs-2 subtitle">{t("choco")}</h2>
               <ul className="fs-3">
                 <li>{t("snikers")}</li>
@@ -21,7 +21,7 @@ const Cake: React.FC = () => {
                 <li>{t("cherry")}</li>
               </ul>
             </div>
-            <div>
+            <div className="animation_item item">
               <h2 className="fs-2 subtitle mt-5">{t("FruitsBerries")}</h2>
               <ul className="fs-3">
                 <li>{t("lemon")}</li>
@@ -30,7 +30,7 @@ const Cake: React.FC = () => {
                 <li>{t("carrot")}</li>
               </ul>
             </div>
-            <div>
+            <div className="animation_item item">
               <h2 className="fs-2 subtitle mt-5">{t("classic")}</h2>
               <ul className="fs-3">
                 <li>{t("truffle")}</li>
@@ -42,7 +42,7 @@ const Cake: React.FC = () => {
         </div>
         <div className="cakes_price">
           <div>
-            <div>
+            <div className="animation_item item">
               <h2 className="fs-2 subtitle">{t("price")}</h2>
               <ul className="fs-3">
                 <li>{t("cake1")}</li>
