@@ -16,7 +16,6 @@
     object-fit: cover;
     border-radius: 25px;
   }
-
   .cake-title,
   .bento-title,
   .cupcake-title {
@@ -35,7 +34,7 @@
     border-radius: 25px;
     box-shadow: 0px 0px 15px 3px rgb(255, 222, 228);
     position: relative;
-    background-color: rgb(253, 221, 227);
+    background-color: rgb(255, 228, 231);
     ul {
       list-style: none;
     }
@@ -62,11 +61,15 @@
       opacity: 1;
     }
   }
-}
-ul li,
-ul li {
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: translateX(5px);
+  ul li,
+  ul li {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateX(5px);
+    }
+  }
+
+  .information {
+    text-align: center;
   }
 }
