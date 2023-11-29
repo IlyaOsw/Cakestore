@@ -15,7 +15,6 @@
   }
   .nav-link {
     cursor: pointer;
-    transition: all 0.3s;
     padding-top: 60px;
     position: relative;
     &:hover {
@@ -27,7 +26,7 @@
       position: absolute;
       width: 0;
       height: 1px;
-      background: rgb(54, 54, 54);
+      background: rgb(181, 181, 181);
       transition: 0.4s;
       right: 0;
       left: initial;

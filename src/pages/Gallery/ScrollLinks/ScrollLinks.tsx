@@ -22,7 +22,7 @@ const ScrollLinks: React.FC = () => {
         to={`${el.label}`}
         smooth={true}
         duration={200}
-        className="gallery_links animation_item item"
+        className="gallery_links fs-4 animation_item item"
       >
         <img
           src={process.env.PUBLIC_URL + `/images/arrowRight.png`}

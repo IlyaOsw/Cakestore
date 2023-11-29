@@ -44,7 +44,7 @@ const About: React.FC = () => {
         </p>
       </div>
       <img
-        src={process.env.PUBLIC_URL + `/images/coverAbout.jpg`}
+        src={process.env.PUBLIC_URL + `/images/coverContent.jpg`}
         alt="Cover"
         className="background_image"
       />
