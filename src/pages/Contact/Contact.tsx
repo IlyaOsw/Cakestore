@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <div className="container-fluid contact">
+    <div className="container-fluid contact z-1">
       <Animation />
       <img
         src={process.env.PUBLIC_URL + `/images/coverContact.jpg`}
@@ -20,6 +20,7 @@ const Contact: React.FC = () => {
       />
       <div className="block-contact container">
         <div className="contact-info z-2">
+          <h1 className="fs-1 contact-title">{t("writeToMe")}</h1>
           <form
             method="POST"
             id="form"

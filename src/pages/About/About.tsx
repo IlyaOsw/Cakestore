@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.scss";
 import Animation from "../../common/Animation";
+import { useTranslation } from "react-i18next";
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="container about z-1">
       <Animation />
@@ -14,6 +16,7 @@ const About: React.FC = () => {
         />
       </div>
       <div className="about-info fs-5">
+        <h1 className="fs-1 about-title">{t("about")}</h1>
         <p className="animation_item item">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed unde
           repudiandae nostrum similique assumenda ipsum magnam vel recusandae

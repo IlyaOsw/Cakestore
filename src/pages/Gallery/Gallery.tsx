@@ -10,7 +10,7 @@ import Animation from "../../common/Animation";
 const Gallery: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div className="container-fluid gallery">
+    <div className="container-fluid gallery z-1">
       <img
         src={process.env.PUBLIC_URL + `/images/coverGallery.jpg`}
         alt="Cover"

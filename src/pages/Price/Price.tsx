@@ -8,12 +8,19 @@ import Animation from "../../common/Animation";
 
 const Price: React.FC = () => {
   return (
-    <div className="container">
-      <Animation />
-      <Cake />
-      <Bento />
-      <Cupcake />
-      <Delivery />
+    <div className="container-fluid background_price">
+      <img
+        src={process.env.PUBLIC_URL + `/images/coverGallery.jpg`}
+        alt="Cover"
+        className="cover_image"
+      />
+      <div className="container">
+        <Animation />
+        <Cake />
+        <Bento />
+        <Cupcake />
+        <Delivery />
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Cupcake: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="cupcake-title animation_item item">
+      <div className="cupcake-title animation_item item hr mt-5">
         <h1 className="fs-1">{t("cupcake")}</h1>
       </div>
       <div className="cupcake mt-5">

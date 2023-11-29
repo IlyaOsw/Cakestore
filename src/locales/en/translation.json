@@ -39,8 +39,7 @@
     "bento10": "Bento 10 cm - 500 gr - 13€",
     "bento13": "Big-bento 13 cm - 700-800 gr - 20€",
     "cakePrice": "The price includes the cake and packaging.",
-    "decor": "The cost of decor is calculated separately",
-    "decor2": "depending on complexity.",
+    "decor": "The cost of decor is calculated separately depending on complexity.",
     "cake1": "1 kg, 14-16 cm - 30€",
     "cake2": "1.5 kg, 16-18 cm - 45€",
     "cake3": "2 kg, 20-22 cm - 60€",
@@ -64,5 +63,6 @@
     "chocolate": "Chocolate",
     "vanilla": "Vanilla",
     "caramel": "Caramel",
-    "lemon2": "Lemon"
+    "lemon2": "Lemon",
+    "writeToMe": "Write to me"
 }

@@ -38,8 +38,7 @@
     "bento10": "Bento 10 cm - 500 gr - 13€",
     "bento13": "Suur-bento 13 cm - 700-800 gr - 20€",
     "cakePrice": "Hind sisaldab torti ja pakendit.",
-    "decor": "Tordi kaunistamise maksumus sõltub keerukusest",
-    "decor2": "ja see arvutatakse eraldi.",
+    "decor": "Tordi kaunistamise maksumus sõltub keerukusest ja see arvutatakse eraldi.",
     "cake1": "1 kg, 14-16 cm - 30€",
     "cake2": "1.5 kg, 16-18 cm - 45€",
     "cake3": "2 kg, 20-22 cm - 60€",
@@ -63,5 +62,6 @@
     "chocolate": "Šokolaad",
     "vanilla": "Vanilla",
     "caramel": "Karamell",
-    "lemon2": "Sidruni"
+    "lemon2": "Sidruni",
+    "writeToMe": "Kirjuta mulle"
 }

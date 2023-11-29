@@ -6,7 +6,7 @@ const Delivery: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="information mt-5">
+      <div className="information mt-5 hr">
         <div className="fs-4 animation_item item">
           <p className="fs-2 subtitle">{t("order")}</p>
           <p>{t("myself")}</p>

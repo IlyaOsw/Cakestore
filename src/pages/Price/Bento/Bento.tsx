@@ -6,7 +6,7 @@ const Bento: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="bento-title animation_item item">
+      <div className="bento-title animation_item item hr mt-5">
         <h1 className="fs-1">{t("bento")}</h1>
       </div>
       <div className="bento mt-5">

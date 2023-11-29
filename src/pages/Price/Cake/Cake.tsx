@@ -52,11 +52,7 @@ const Cake: React.FC = () => {
               </ul>
               <div className="fs-3 mt-5">
                 <p>{t("cakePrice")}</p>
-                <p>
-                  {t("decor")}
-                  <br />
-                  {t("decor2")}
-                </p>
+                <p>{t("decor")}</p>
               </div>
             </div>
           </div>
