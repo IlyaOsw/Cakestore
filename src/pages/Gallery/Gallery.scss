@@ -20,13 +20,18 @@
     letter-spacing: 5px;
     padding-top: 20px;
     cursor: default;
+    transition: 0.3s all !important;
+    &:hover {
+      color: #ff7f50;
+    }
   }
   .gallery_links {
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    padding-top: 20px;
+    padding-top: 25px;
+    transition: 0.3s all !important;
     &:hover {
       color: #ff7f50;
     }

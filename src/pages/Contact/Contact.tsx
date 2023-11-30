@@ -91,7 +91,7 @@ const Contact: React.FC = () => {
               type="submit"
               disabled={state.submitting}
               value="Send Email"
-              className="fw-bold animation_item item"
+              className="fw-bold animation_item item contact-btn"
             >
               {t("submit")}
             </button>

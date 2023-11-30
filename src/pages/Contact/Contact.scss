@@ -13,6 +13,13 @@
   letter-spacing: 5px;
   font-weight: 500;
   padding-top: 20px;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #ff7f50;
+  }
+}
+.contact-btn {
+  color: rgb(0, 0, 0) !important;
 }
 .block-contact {
   position: relative;

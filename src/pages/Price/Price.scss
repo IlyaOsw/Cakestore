@@ -29,21 +29,21 @@
   .cupcake {
     width: 100%;
     max-width: 600px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 25px;
     box-shadow: 0px 0px 15px 3px rgb(255, 222, 228);
     position: relative;
-    background-color: rgb(255, 228, 231);
+    background-color: rgb(254, 238, 240);
+    font-weight: 300;
     ul {
       list-style: none;
     }
   }
   .subtitle {
-    text-decoration: underline 1px;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 500;
     transition: color 0.3s ease;
-
     &:hover {
       color: #ff7f50;
     }
@@ -68,8 +68,7 @@
       transform: translateX(5px);
     }
   }
-
   .information {
-    text-align: center;
+    text-align: center !important;
   }
 }
