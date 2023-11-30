@@ -9,7 +9,7 @@ const Main: React.FC = () => {
   return (
     <div className="container-fluid">
       <Animation />
-      <div className="block-title z-2">
+      <div className="block-title">
         <p className="fs-1 animation_item item">{t("mainTitle")}</p>
         <br />
         <p className="fs-1 animation_item item">{t("mainTitle2")}</p>
