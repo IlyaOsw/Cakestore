@@ -11,12 +11,12 @@ const Gallery: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="container gallery">
-      <Animation />
       <img
         src={process.env.PUBLIC_URL + `/images/coverContent.jpg`}
         alt="Cover"
         className="cover_image"
       />
+      <Animation />
       <ScrollLinks />
       <div id="cake">
         <Cakes />

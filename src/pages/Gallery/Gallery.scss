@@ -2,6 +2,7 @@
   position: relative;
   padding-bottom: 30px;
   margin-top: 60px;
+  z-index: 1;
   .cover_image {
     margin-left: -11.5px;
     position: absolute;
@@ -22,7 +23,7 @@
     cursor: default;
     transition: 0.3s all !important;
     &:hover {
-      color: #ff7f50;
+      color: rgb(255, 136, 156);
     }
   }
   .gallery_links {
@@ -33,7 +34,7 @@
     padding-top: 25px;
     transition: 0.3s all !important;
     &:hover {
-      color: #ff7f50;
+      color: rgb(255, 136, 156);
     }
     &::after {
       content: "";
@@ -113,4 +114,10 @@
       margin-top: 5%;
     }
   }
+}
+.modal {
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-backdrop {
+  display: none;
 }

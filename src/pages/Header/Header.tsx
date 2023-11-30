@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container z-3">
+      <div className="container z-1">
         <NavLink to="/Cakestore" className="navbar-brand fs-3">
           <img
             className="logo_img me-3"
