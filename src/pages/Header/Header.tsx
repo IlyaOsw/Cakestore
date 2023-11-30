@@ -8,8 +8,8 @@ import { NavLink } from "react-router-dom";
 const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container z-2">
+    <nav className="navbar navbar-expand-lg z-3">
+      <div className="container">
         <NavLink to="/Cakestore" className="navbar-brand fs-3">
           <img
             className="logo_img me-3"
