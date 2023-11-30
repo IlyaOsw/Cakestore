@@ -25,7 +25,7 @@
             $email = $_POST['email'];
             $message = $_POST['message'];
             $mail->isHTML(true);
-            $mail->Subject = '=?utf-8?B?' . base64_encode('Message from Resume') . '?=';
+            $mail->Subject = '=?utf-8?B?' . base64_encode('Message from Cakestore') . '?=';
             $mail->Body = 'Name: ' . $name . '<br />
                             Email: ' . $email . '<br />
                                 <b>Message:</b> ' . $message;

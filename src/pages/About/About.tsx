@@ -24,6 +24,8 @@ const About: React.FC = () => {
           voluptas at adipisci voluptatem quisquam minus alias.
           <br />
           <br />
+        </p>
+        <p className="animation_item item">
           Inventore eaque doloremque architecto dolores unde harum animi laborum
           voluptatibus placeat, laudantium dolor iusto veritatis consequatur
           magnam molestias voluptate et ut perferendis? Et voluptate cum eveniet
@@ -37,10 +39,12 @@ const About: React.FC = () => {
           ab reprehenderit architecto eveniet voluptates laboriosam porro, eius
           consequatur suscipit, debitis ea, nihil amet obcaecati harum tempora
           molestias nobis sint in veritatis laudantium ducimus nesciunt expedita
-          doloribus. Ipsa consectetur architecto minus vel optio. Omnis ab
-          inventore nesciunt voluptas sapiente exercitationem ex perferendis
-          impedit ea libero, sed repudiandae iste eius, ipsam fugit ducimus,
-          quaerat.
+          doloribus.
+        </p>
+        <p className="animation_item item">
+          Ipsa consectetur architecto minus vel optio. Omnis ab inventore
+          nesciunt voluptas sapiente exercitationem ex perferendis impedit ea
+          libero, sed repudiandae iste eius, ipsam fugit ducimus, quaerat.
         </p>
       </div>
       <img
