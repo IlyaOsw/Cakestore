@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Cakestore/static/css/main.4158ff12.css",
-    "main.js": "/Cakestore/static/js/main.dd2d38bb.js",
+    "main.css": "/Cakestore/static/css/main.4dbb070b.css",
+    "main.js": "/Cakestore/static/js/main.a2837369.js",
     "index.html": "/Cakestore/index.html",
-    "main.4158ff12.css.map": "/Cakestore/static/css/main.4158ff12.css.map",
-    "main.dd2d38bb.js.map": "/Cakestore/static/js/main.dd2d38bb.js.map"
+    "main.4dbb070b.css.map": "/Cakestore/static/css/main.4dbb070b.css.map",
+    "main.a2837369.js.map": "/Cakestore/static/js/main.a2837369.js.map"
   },
   "entrypoints": [
-    "static/css/main.4158ff12.css",
-    "static/js/main.dd2d38bb.js"
+    "static/css/main.4dbb070b.css",
+    "static/js/main.a2837369.js"
   ]
 }
