@@ -73,5 +73,8 @@
     .offcanvas {
       width: 60% !important;
     }
+    .navbar-brand > span {
+      display: none;
+    }
   }
 }

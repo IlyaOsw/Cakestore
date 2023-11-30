@@ -16,7 +16,7 @@ const Header: React.FC = () => {
             src={process.env.PUBLIC_URL + `/images/AnnyCakestoreLogo.jpg`}
             alt="Logo"
           />
-          Anny Cakestore
+          <span>Anny Cakestore</span>
         </NavLink>
         <button
           className="navbar-toggler"
