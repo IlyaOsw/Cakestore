@@ -10,9 +10,9 @@ const Main: React.FC = () => {
     <div className="container-fluid">
       <Animation />
       <div className="block-title z-2">
-        <p className="fs-1 animation_item item">{t("mainTitle")}</p>
-        <br />
-        <p className="fs-1 animation_item item">{t("mainTitle2")}</p>
+        <p className="animation_item item">{t("mainTitle")}</p>
+
+        <p className="animation_item item">{t("mainTitle2")}</p>
       </div>
       <div className="block-image">
         <img
