@@ -28,7 +28,7 @@ const ScrollLinks: React.FC = () => {
           src={process.env.PUBLIC_URL + `/images/arrowRight.png`}
           alt="Arrow right"
         />
-        {t(`${el.label}`)}
+        <span>{t(`${el.label}`)}</span>
       </ScrollLink>
     ));
   return (

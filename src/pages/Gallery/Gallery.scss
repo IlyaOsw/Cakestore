@@ -31,26 +31,19 @@
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    padding-top: 25px;
+    margin-top: 25px;
+    padding: 7px;
     transition: 0.3s all !important;
+    outline: 1px solid pink;
+    border-radius: 25px;
+    width: 230px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 15px 3px rgb(255, 222, 228);
+    color: rgb(255, 80, 107);
+    background-color: rgb(255, 239, 242);
+    transition: 0.3s all;
     &:hover {
-      color: rgb(255, 136, 156);
-    }
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 0;
-      height: 1px;
-      background: rgb(181, 181, 181);
-      transition: 0.4s;
-      right: 0;
-      left: initial;
-    }
-    &:hover:after {
-      width: 100%;
-      right: initial;
-      left: 0;
+      filter: brightness(104%);
     }
     img {
       padding: 0px 5px 5px 0px;
